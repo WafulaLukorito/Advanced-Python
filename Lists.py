@@ -2,6 +2,10 @@
 mylist = ["banana", "cherry", "apple", "wafula"]
 print(mylist)
 
+#*Find index of element in list
+
+#index= mylist.index(element)
+
 # mylist2=[5, True, "apple", "apple"]
 # print(mylist2)
 

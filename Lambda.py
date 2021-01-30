@@ -20,15 +20,15 @@ mult =  lambda x, y: x*y     #*Lambda with two arguments
 
 points2D = [(1,2), (15,1), (5, -1,), (10, 4)]   #*Can think of these of x and y cordinates of points\
 
-points2D_sorted  = sorted(points2D)   #*Sorts list by first argument.
+points2D_sorted  = sorted(points2D)   #*Sorts list by first argument. #?[(1, 2), (5, -1), (10, 4), (15, 1)]
 
-#print(points2D)
-#print (points2D_sorted)    
+# print(points2D)
+# print (points2D_sorted)    
 
 
 points2D_sorted2  = sorted(points2D, key= lambda x: x[1])    #*Giving it an argument to sort by second using lambda
 
-#print(points2D_sorted2)
+#print(points2D_sorted2)   #?  [(5, -1), (15, 1), (1, 2), (10, 4)]
 
 def sort_by_y(x):    #*Performs same function as lambda above. 
     return x[1]
@@ -70,7 +70,7 @@ c1= [x for x in a1 if x%2 !=0]   #*Can achieve same thing with list comprehensio
 from functools import reduce  #*Must import!!
 
 a2 = [1,2,3,4]
-prod_a2 = reduce(lambda x, y : x*y, a2)   #*Finding product of Elements. Reduce function always has two argumenents. 
+prod_a2 = reduce(lambda x, y : x*y, a2)   #*Finding product of Elements. Reduce function always has two argumenents. #?24
 print (prod_a2)
 
 

@@ -5,24 +5,25 @@
 #----COUNTER----
 from collections import Counter  #*Don't forget to import!!
 
-#*Counter stores elements as dictionary keys and their counts as dictionary values
+#*Counter stores elements as dictionary keys and their counts(how often they appear) as dictionary values
 
 a = "aaaaaabbbbbcccc"
-b = [6,0,2,1,4,7,0,1,6]
-my_counter = Counter(b)
-#print(my_counter)
+b = [6,0,2,1,4,7,0,1,6]  #*Will be Counter({6: 2, 0: 2, 1: 2, 2: 1, 4: 1, 7: 1})
+my_counter = Counter(a)
+#print(my_counter)  #*Prints Counter({'a': 6, 'b': 5, 'c': 4})
 
 #*Since it's a dictionary we can do normal dict functions
-# print(my_counter.items())
-# print(my_counter.values())
-# print(my_counter.keys())
+#print(my_counter.items())  #*Prints dict_items([('a', 6), ('b', 5), ('c', 4)])
+# print(my_counter.values()) #*Prints dict_values([6, 5, 4])
+# print(my_counter.keys())  #*dict_keys(['a', 'b', 'c'])
 
-# for value in my_counter.values():
-#     print (value*100)
+#  for value in my_counter.values():
+#      print (value*100)
 
-#print (my_counter.most_common(2))    #*View most common item(s). Returns list with tuples inside
-# print (my_counter.most_common(2)[1]) 
-# print (my_counter.most_common(2)[1][0]) 
+#print (my_counter.most_common(1)[0[0]]) #*Prints a
+# print (my_counter.most_common(2))    #*View most common item(s). Returns list with tuples inside. Will print [('a', 6), ('b', 5)]. The indicates we want top 2 items
+# print (my_counter.most_common(2)[1])  #* Prints second most common item, ('b', 5)
+# print (my_counter.most_common(2)[1][0]) #*Prints b
 
 #print (list(my_counter.elements()))  #*Iterator over elements repeating each as many times as its count.
 
@@ -87,7 +88,7 @@ from collections import OrderedDict
 
 
 # #----DEFAULT DICT----
-# from collections import defaultdict
+from collections import defaultdict
 # #* Similar to ordinary dict but has default value if key is not set yet
 # d= defaultdict(int)    #*Default type int
 # d['a'] =1
@@ -105,6 +106,7 @@ from collections import OrderedDict
 # print (e['a']) #*Access the key a
 # print (e['b'])  #*Access key b
 # print (e['c']) #*When not assigned, prints default float value, 0.0
+# print (e['d']) 
 
 
 # f= defaultdict(list)    #*Default type empty list or tuple #!Raises key error with normal dictionary. 
@@ -114,6 +116,7 @@ from collections import OrderedDict
 # print (f['a']) #*Access the key a
 # print (f['b'])  #*Access key b
 # print (f['c']) #*When not assigned, prints default list or tuple value, empty
+# print (f['d'])
 
 
 
@@ -136,11 +139,11 @@ my_deque.pop()   #*Normal remove of elements to the right
 my_deque.popleft() #*Remove items from left
 #print (my_deque)
 
-my_deque.extend([4,5,6, "kaswende"])  #*Can extend deque with multiple elements at a time using list
+my_deque.extend([4,5,6, "kaswende"])  #*Can extend deque with multiple elements at a time using list. ^ will be most left element
 my_deque.extendleft([32, "Rwanda", -34])  #*Extends to the left. *// Note! -34 is added the leftest!!!
 
 print (my_deque)
-
+#my_deque.clear() #*Removes all elements
 #my_deque.rotate(1)  #*Rotates elements one place to the right! Basically puts last element first.
 #my_deque.rotate(2)   #*Rotates elements two places to the right
 my_deque.rotate(-1)    #*Rotates on place to the left! Basically puts first element first!
