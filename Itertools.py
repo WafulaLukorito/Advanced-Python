@@ -33,7 +33,7 @@ perm2= permutations(a1 , 2) #*Can specify length of permutations!!
 from itertools import combinations  #*No repetitions!!
 a2= [1, 2, 3, 4]   #*Combines to [(1, 2, 3), (1, 2, 4), (1, 3, 4), (2, 3, 4)]
 a21 = ["b", "a", "n", "a", "n", "a"]
-comb = combinations(a21, 3)  #*Second argument is mandatory!
+comb = combinations(a21, 3)  #*Second argument is mandatory! #? Combines to [(1, 2, 3), (1, 2, 4), (1, 3, 4), (2, 3, 4)]
 #print (list(comb))
 
 from itertools import combinations_with_replacement  #*Allows repetitions!!

@@ -46,7 +46,7 @@ points2D_sorted3= sorted(points2D, key= lambda x: x[0]+x[1]) #*Sorting by sum of
 #* map (func, seq)
 
 a= [1,2,3,4,5]
-b = map(lambda x: x*2, a) 
+b = map(lambda x: x*2, a)
 
 #print(list(b))    #!Must convert map object to list!
 

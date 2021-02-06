@@ -8,22 +8,22 @@ from collections import Counter  #*Don't forget to import!!
 #*Counter stores elements as dictionary keys and their counts(how often they appear) as dictionary values
 
 a = "aaaaaabbbbbcccc"
-b = [6,0,2,1,4,7,0,1,6]  #*Will be Counter({6: 2, 0: 2, 1: 2, 2: 1, 4: 1, 7: 1})
+b = [6,0,2,1,4,7,0,1,6]  #?Will be Counter({6: 2, 0: 2, 1: 2, 2: 1, 4: 1, 7: 1})
 my_counter = Counter(a)
-#print(my_counter)  #*Prints Counter({'a': 6, 'b': 5, 'c': 4})
+#print(my_counter)  #?Prints Counter({'a': 6, 'b': 5, 'c': 4})
 
 #*Since it's a dictionary we can do normal dict functions
-#print(my_counter.items())  #*Prints dict_items([('a', 6), ('b', 5), ('c', 4)])
-# print(my_counter.values()) #*Prints dict_values([6, 5, 4])
-# print(my_counter.keys())  #*dict_keys(['a', 'b', 'c'])
+#print(my_counter.items())  #?Prints dict_items([('a', 6), ('b', 5), ('c', 4)])
+# print(my_counter.values()) #?Prints dict_values([6, 5, 4])
+# print(my_counter.keys())  #?dict_keys(['a', 'b', 'c'])
 
 #  for value in my_counter.values():
 #      print (value*100)
 
-#print (my_counter.most_common(1)[0[0]]) #*Prints a
-# print (my_counter.most_common(2))    #*View most common item(s). Returns list with tuples inside. Will print [('a', 6), ('b', 5)]. The indicates we want top 2 items
-# print (my_counter.most_common(2)[1])  #* Prints second most common item, ('b', 5)
-# print (my_counter.most_common(2)[1][0]) #*Prints b
+#print (my_counter.most_common(1)[0[0]]) #?Prints a
+# print (my_counter.most_common(2))    #*View most common item(s). Returns list with tuples inside. #?Will print [('a', 6), ('b', 5)]. The indicates we want top 2 items
+# print (my_counter.most_common(2)[1])  #? Prints second most common item, ('b', 5)
+# print (my_counter.most_common(2)[1][0]) #?Prints b
 
 #print (list(my_counter.elements()))  #*Iterator over elements repeating each as many times as its count.
 
@@ -139,7 +139,7 @@ my_deque.pop()   #*Normal remove of elements to the right
 my_deque.popleft() #*Remove items from left
 #print (my_deque)
 
-my_deque.extend([4,5,6, "kaswende"])  #*Can extend deque with multiple elements at a time using list. ^ will be most left element
+my_deque.extend([4,5,6, "kaswende"])  #*Can extend deque with multiple elements at a time using list. "Kaswende" will be most left element
 my_deque.extendleft([32, "Rwanda", -34])  #*Extends to the left. *// Note! -34 is added the leftest!!!
 
 print (my_deque)

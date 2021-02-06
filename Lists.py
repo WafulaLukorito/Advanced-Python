@@ -33,8 +33,8 @@ print(mylist)
 # item=mylist.clear()
 # print(mylist)
 
-# item=mylist.reverse()
-# print(mylist)
+item=mylist.reverse()
+print(mylist)
 
 
 # # # mylist.sort()
@@ -85,7 +85,7 @@ print(mylist)
 #-------LIST COMPREHENSION--- fast way to create new list from existing list
 numlist=[1, 2, 3, 4, 5, 6]
 numlist2= [i*i for i in numlist] #**easy way to generate squares 
-print (numlist, numlist2)
+# print (numlist, numlist2)
 
 
 

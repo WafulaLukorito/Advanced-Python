@@ -9,7 +9,7 @@ import logging
 # Logging in Python
 # Last Updated: 08-02-2018
 # Logging is a means of tracking events that happen when some software runs. Logging is important for software developing, debugging and running. If you don’t have any logging record and your program crashes, there are very little chances that you detect the cause of the problem. And if you detect the cause, it will consume a lot of time. With logging, you can leave a trail of breadcrumbs so that if something goes wrong, we can determine the cause of the problem.
-# There are a number of situations like if you are expecting an integer, you have been given a float and you can a cloud API, the service is down for maintenance and much more. Such problems are out of control and are hard to determine.
+# There are a number of situations like if you are expecting an integer, you have been given a float and you call a cloud API, the service is down for maintenance and much more. Such problems are out of control and are hard to determine.
 
 # Why Printing is not a good option?
 
