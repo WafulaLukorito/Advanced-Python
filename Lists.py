@@ -18,7 +18,7 @@ print(mylist)
 #         print("noooo")
 
 #         print (len(mylist))
-# mylist.append("alufaw")
+# mylist.append("alufaw")  
 # print(mylist)
 
 # mylist.insert(-1, "ugalibeans")
@@ -89,7 +89,26 @@ numlist2= [i*i for i in numlist] #**easy way to generate squares
 
 
 
+#*---------FROM TEAM TREEHOusE COURSE------------
+new_list = [1, 2, 3]
 
+result = new_list[0]
+
+if 1 in new_list: print (True)
+
+for n in new_list:
+    if n == 1:
+        print (True)
+        break
+
+new_list.append(4) #Constant time In Python, coz it simply adds to end of list (O(1)) #*Amortized Constant Space Complexity, not all ops increase size
+new_list.insert(0)  #Linear time, we have to iterate over all items and shift them to right (O(n)) #*
+
+numbers = []
+
+numbers.extend([4,5,6]) #Add a list to another #* Time O(k)
+
+numbers.delete() #*Similar to inserts, shifts to the left (O(n))
 
 
 
