@@ -58,7 +58,8 @@ a.update(b)
 
 #* You can aslo use tuples as keys
 mytuplea=(8,7)
-mydicta= {mytuplea:54}
+mydicta= {mytuplea:54} #? {(8, 7): 54}
+
 print (mydicta)
 
 #*Cannot use lists as keys!! Lists are not hashable
