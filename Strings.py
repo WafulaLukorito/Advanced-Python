@@ -1,4 +1,4 @@
-#STRINGS : Ordered, immutable, used for text representation
+# STRINGS : Ordered, immutable, used for text representation
 
 # my_string = """Hello    #* Tripple quotes used for multiline strings and code documentation
 # World!"""
@@ -8,28 +8,28 @@
 
 # print(my_string)
 
-stringa= "Hello World!"       #*Access specific character.
+stringa = "Hello World!"  # *Access specific character.
 char = stringa[-2]
-#print(char) 
-#stringa[3] ='p'  #!Won't work, not mutable!!
+# print(char)
+# stringa[3] ='p'  #!Won't work, not mutable!!
 
-substring = stringa[3:]    #*Slicing
-substringb = stringa[::-1]  #* Reverse sting!! Cool trick!! Using Step!!
+substring = stringa[3:]  # *Slicing
+substringb = stringa[::-1]  # * Reverse sting!! Cool trick!! Using Step!!
 
-#*Concatenate strings with +
+# *Concatenate strings with +
 
 # for i in stringa:
 #     i=i.upper()     #* Others: lower(), capitalize(), isupper(), islower(), startswith()
 #     print(i)
 
-#print(stringa.startswith("Hello"))
+# print(stringa.startswith("Hello"))
 
-#print(stringa.count("l"))  #*Count how many times a substring appears
+# print(stringa.count("l"))  #*Count how many times a substring appears
 
-#print(stringa.replace("World", "Kenya"))   #*Replace substring with another substring! Returns new string. If substring not found, original string stays the same
+# print(stringa.replace("World", "Kenya"))   #*Replace substring with another substring! Returns new string. If substring not found, original string stays the same
 
 # if 'World' in stringa:
-#     print ("H imepatikana kuanzia index ")   #*Two ways of returning the index of substring, index() and find()
+#     print ("H imepatikana kuanzia index ")  #  #*Two ways of returning the index of substring, index() and find()
 #     print ( stringa.index("W"))
 #     print("hadi index")
 #     print (stringa.find("d"))
@@ -38,18 +38,20 @@ substringb = stringa[::-1]  #* Reverse sting!! Cool trick!! Using Step!!
 
 stringx = '    Hello  World!    '
 
-stringx = stringx.strip()    #*Removes whitespace before and after string (leading and trailing)
+# *Removes whitespace before and after string (leading and trailing)
+stringx = stringx.strip()
 
-stringx="".join(stringx.split())  #*Removes ALL whitespace
+stringx = "".join(stringx.split())  # *Removes ALL whitespace
 
-#---LISTS AND STRINGS--- #*Convert string words to lists and vice vers
+# ---LISTS AND STRINGS--- #*Convert string words to lists and vice vers
 string_y = "How are you doing "
-string_z="1,2,3,4,5"
-list_y = string_y.split()   #*Default delimiter is space. 
-list_z =string_z.split(",")
+string_z = "1,2,3,4,5"
+list_y = string_y.split()  # *Default delimiter is space.
+list_z = string_z.split(",")
 
-string_f = ' '.join(list_y)   #*Convert list to string. Be careful to include delimiter
-string_g=','.join(list_z)
+# *Convert list to string. Be careful to include delimiter
+string_f = ' '.join(list_y)
+string_g = ','.join(list_z)
 
 
 # from timeit import default_timer as timer #*Comparing times!!
@@ -77,95 +79,26 @@ string_g=','.join(list_z)
 
 # print("The good join operation took "+ str(timetakenb)+" to complete")
 
-#---FORMATTING STRINGS---
-#* 3 methods: % -old method, .format(), f-String -newest method
+# ---FORMATTING STRINGS---
+# * 3 methods: % -old method, .format(), f-String -newest method
 
 var = "TomatoSauce"
 var2 = 365
 var3 = 3.4155211799
-my_string= "the variable is %s" % var     #*Placeholder for string that is filled later with variable
-my_string2= "the variable is %d" % var2    #*Placeholder for number
-my_string3 = "the variable is %.2f" % var3    #* Placeholder for floating point. Rounds to 6 dec places unless specified
+# *Placeholder for string that is filled later with variable
+my_string = "the variable is %s" % var
+my_string2 = "the variable is %d" % var2  # *Placeholder for number
+# * Placeholder for floating point. Rounds to 6 dec places unless specified
+my_string3 = "the variable is %.2f" % var3
 
 
-#---Format Method---
-my_string4 = "the variable is {}".format(var)    #*no need to specify var type!!
-my_string4 = "the variable is {:.2f} and {}".format(var3, var) #*Specify 2 dec. plcs and add more variables
+# ---Format Method---
+my_string4 = "the variable is {}".format(var)  # *no need to specify var type!!
+my_string4 = "the variable is {:.2f} and {}".format(
+    var3, var)  # *Specify 2 dec. plcs and add more variables
 
-#---f-string method---
-my_string5 = f"the variable is {var3}, {var2*26} and {var}"  #* BEST METHOD!!
+# ---f-string method---
+my_string5 = f"the variable is {var3}, {var2*26} and {var}"  # * BEST METHOD!!
 
 
 print(my_string5)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

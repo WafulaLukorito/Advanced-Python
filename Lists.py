@@ -1,8 +1,8 @@
 # Lists:ordered, mutable, allows duplicate elements
-mylist = ["banana", "cherry", "apple", "wafula"]
-print(mylist)
+# mylist = ["banana", "cherry", "apple", "wafula"]
+# print(mylist)
 
-#*Find index of element in list
+# #*Find index of element in list
 
 #index= mylist.index(element)
 
@@ -18,13 +18,13 @@ print(mylist)
 #         print("noooo")
 
 #         print (len(mylist))
-# mylist.append("alufaw")  
+# mylist.append("alufaw")
 # print(mylist)
 
 # mylist.insert(-1, "ugalibeans")
 # print(mylist)
 
-# (mylist.pop(0))
+# (mylist.pop())
 # print (mylist)
 
 # mylist.remove("apples")
@@ -33,8 +33,8 @@ print(mylist)
 # item=mylist.clear()
 # print(mylist)
 
-item=mylist.reverse()
-print(mylist)
+# item=mylist.reverse()
+# print(mylist)
 
 
 # # # mylist.sort()
@@ -52,8 +52,7 @@ print(mylist)
 # # print(mylist5)
 
 
-
-# newlist= [1, 2, 3,4,5,6,7,8,9]
+newlist = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
 # a=newlist[1:6] #slicing
 # print (a)
@@ -62,8 +61,8 @@ print(mylist)
 # c=newlist[:7]
 # print(a, b, c)
 
-# d=newlist[::3]  #step
-# print (d)
+d = newlist[::1]  # step
+print(d)
 
 # e=newlist[::-1] #reverse list with negative step
 # print(e)
@@ -82,67 +81,32 @@ print(mylist)
 # #---Copying with slicing!
 # list_cpy3 = list_org[:]   #Slices from begining to end, making actual copy.
 
-#-------LIST COMPREHENSION--- fast way to create new list from existing list
-numlist=[1, 2, 3, 4, 5, 6]
-numlist2= [i*i for i in numlist] #**easy way to generate squares 
-# print (numlist, numlist2)
+# -------LIST COMPREHENSION--- fast way to create new list from existing list
+# numlist = [1, 2, 3, 4, 5, 6]
+# numlist2 = [i*i for i in numlist]  # **easy way to generate squares
+# # print (numlist, numlist2)
 
 
+# # *---------FROM TEAM TREEHOusE COURSE------------
+# new_list = [1, 2, 3]
 
-#*---------FROM TEAM TREEHOusE COURSE------------
-new_list = [1, 2, 3]
+# result = new_list[0]
 
-result = new_list[0]
+# if 1 in new_list:
+#     print(True)
 
-if 1 in new_list: print (True)
+# for n in new_list:
+#     if n == 1:
+#         print(True)
+#         break
 
-for n in new_list:
-    if n == 1:
-        print (True)
-        break
+# # Constant time In Python, coz it simply adds to end of list (O(1)) #*Amortized Constant Space Complexity, not all ops increase size
+# new_list.append(4)
+# # Linear time, we have to iterate over all items and shift them to right (O(n)) #*
+# new_list.insert(0)
 
-new_list.append(4) #Constant time In Python, coz it simply adds to end of list (O(1)) #*Amortized Constant Space Complexity, not all ops increase size
-new_list.insert(0)  #Linear time, we have to iterate over all items and shift them to right (O(n)) #*
+# numbers = []
 
-numbers = []
+# numbers.extend([4, 5, 6])  # Add a list to another #* Time O(k)
 
-numbers.extend([4,5,6]) #Add a list to another #* Time O(k)
-
-numbers.delete() #*Similar to inserts, shifts to the left (O(n))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# numbers.delete()  # *Similar to inserts, shifts to the left (O(n))

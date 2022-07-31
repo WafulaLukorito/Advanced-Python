@@ -1,17 +1,10 @@
+# ---PERMUTATIONS----
+# *Permutations will return all possible orderings of an input
+from itertools import permutations
 
-from collections import deque
+a1 = [1, 2, 3]
+perm = permutations(a1)
+print(list(perm))  # *Convert to list before printing!! Prints all permutations
 
-
-my_deque = deque()
-
-my_deque.extend([1, 2, 3, 4, 5])
-
-# *Rotates elements one place to the right! Basically puts last element first.
-# my_deque.rotate(1)
-# print(my_deque)  # *[5, 1, 2, 3, 4]
-# *Rotates elements two places to the right
-# my_deque.rotate(2)
-# print(my_deque)  # *[4, 5, 1, 2, 3]
-# # *Rotates on place to the left! Basically puts second element first!
-my_deque.rotate(-1)
-print(my_deque)  # *[2, 3, 4, 5, 1]
+perm2 = permutations(a1, 2)  # *Can specify length of permutations!!
+print(list(perm2))
