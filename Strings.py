@@ -41,7 +41,7 @@ stringx = '    Hello  World!    '
 # *Removes whitespace before and after string (leading and trailing)
 stringx = stringx.strip()
 
-stringx = "".join(stringx.split())  # *Removes ALL whitespace
+stringx = "".join(stringx.split())  # *Removes ALL whitespaces
 
 # ---LISTS AND STRINGS--- #*Convert string words to lists and vice vers
 string_y = "How are you doing "
