@@ -131,5 +131,5 @@ import logging
 
 # * In production, particularly when dealing with micro-services apps, it is recommended to use python-json-logger. It is a simple library that allows you to log in JSON format. This is useful when you want to send the logs to a centralized logging system like ELK stack or Splunk. The logs can be easily parsed and analyzed. The library can be installed using pip. pip install python-json-logger.  The following code shows how to use the library to log in JSON format. Https://github.com/madzak/python-json-logger
 
-import logging
-from pythonjsonlogger import jsonlogger
+# import logging
+# from pythonjsonlogger import jsonlogger
