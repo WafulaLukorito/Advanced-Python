@@ -1,5 +1,8 @@
 
 #------------ CONTEXT MANAGERS --------------
+
+
+
 #? Context managers are a way to manage resources in Python. They allow you to set up a context for your code to run in, and then clean up after it when you're done. This is especially useful for managing resources like files, network connections, or locks.
 
 #? The most common way to use a context manager is with the with statement. The with statement ensures that the context manager's __enter__() method is called before the block of code is executed, and the __exit__() method is called after the block of code is executed, even if an exception occurs.
